@@ -16,8 +16,8 @@ export default function AnchorTag() {
         MDN: table element
       </a>
       <br />
-      <a href="https://news.ycombinator.com" id="wd-your-link">
-        Hacker News
+      <a href="https://www.hupu.com" id="wd-your-link">
+        Hupu News
       </a>
       <br />
       <a

@@ -127,7 +127,7 @@ export default function YourForm() {
       />
       <br />
       <label htmlFor="wd-your-start-date">Program start date:</label>
-      <input id="wd-your-start-date" type="date" defaultValue="2025-09-03" />
+      <input id="wd-your-start-date" type="date" defaultValue="2025-01-01" />
       <br />
       <label htmlFor="wd-your-excitement">
         How excited I am about this course (0-10):
