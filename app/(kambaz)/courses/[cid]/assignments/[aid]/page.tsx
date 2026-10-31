@@ -1,4 +1,5 @@
 import Link from "next/link";
+import * as db from "../../../../database";
 const input = "w-full rounded border border-neutral-300 px-3 py-2 font-sans";
 const rowLabel = "pt-2 md:w-48 md:shrink-0 md:text-right";
 export default async function AssignmentEditor({
@@ -6,25 +7,26 @@ export default async function AssignmentEditor({
 }: {
   params: Promise<{ cid: string; aid: string }>;
 }) {
-  const { cid } = await params;
+  const { cid, aid } = await params;
+  const assignment = db.assignments.find((a) => a._id === aid);
   return (
     <div id="wd-assignments-editor" className="max-w-3xl">
       <label htmlFor="wd-name" className="mb-1 block">
         Assignment Name
       </label>
-      <input id="wd-name" defaultValue="A1 - ENV + HTML" className={`${input} mb-4`} />
+      <input id="wd-name" defaultValue={assignment?.title ?? ""} className={`${input} mb-4`} />
       <textarea
         id="wd-description"
         rows={6}
         className={`${input} mb-4`}
-        defaultValue="The assignment is available online Submit a link to the landing page of your Web application running on Vercel."
+        defaultValue={assignment?.description ?? ""}
       />
 
       <div className="mb-4 flex flex-col gap-2 md:flex-row md:gap-4">
         <label htmlFor="wd-points" className={rowLabel}>
           Points
         </label>
-        <input id="wd-points" defaultValue={100} className={input} />
+        <input id="wd-points" defaultValue={assignment?.points ?? 100} className={input} />
       </div>
 
       <div className="mb-4 flex flex-col gap-2 md:flex-row md:gap-4">
@@ -94,7 +96,7 @@ export default async function AssignmentEditor({
           <label htmlFor="wd-due-date" className="mb-1 block font-semibold">
             Due
           </label>
-          <input type="date" id="wd-due-date" defaultValue="2024-05-13" className={`${input} mb-4`} />
+          <input type="date" id="wd-due-date" defaultValue={assignment?.due} className={`${input} mb-4`} />
           <div className="flex gap-4">
             <div className="flex-1">
               <label htmlFor="wd-available-from" className="mb-1 block font-semibold">
@@ -103,7 +105,7 @@ export default async function AssignmentEditor({
               <input
                 type="date"
                 id="wd-available-from"
-                defaultValue="2024-05-06"
+                defaultValue={assignment?.available}
                 className={input}
               />
             </div>
