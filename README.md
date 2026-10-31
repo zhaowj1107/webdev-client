@@ -25,6 +25,9 @@ npm run build    # production build (make sure it passes before submitting)
 | `/labs/lab2/tailwind` | Tailwind samples: spacing, typography, backgrounds, responsive, filters, grids |
 | `/labs/lab3` | Lab 3 JavaScript samples, client/server components, path parameters, todo list |
 | `/labs/lab3/add/[a]/[b]` | Shows `a + b` from the URL, e.g. `/labs/lab3/add/12/30` → 42 |
+| `/labs/lab3/types` | TypeScript types: annotations, object types, interfaces, unions, enums, function types, props, narrowing, any vs unknown, utility types |
+| `/labs/lab3/client-apis` | Client-only APIs: pathname, search params, window, geolocation, map iframe, public IP |
+| `/labs/lab3/server-apis` | Server-only APIs: server time, os, env, request headers, weather fetch, visit counter, child_process |
 | `/labs/lab4`, `/labs/lab5` | Placeholder pages |
 | `/account/signin`, `/signup`, `/profile` | Account screens, with Account Navigation on the left |
 | `/dashboard` | One card per course in `courses.json`, linking to `/courses/[cid]/home` |
@@ -47,5 +50,6 @@ npm run build    # production build (make sure it passes before submitting)
 ## Data notes (A3)
 
 - `app/(kambaz)/database/*.json` are the reference files from the book (courses RS101–RS103); `index.ts` re-exports them.
+- Includes the chapter's On-your-own and With-AI extras: two extra courses (RS104, RS105), a `term` on every course, extra lessons (L104, L204), assignment A204, and enrollments 16 and 20.
 - Course screens look up data by the `[cid]` / `[aid]` in the URL, so `/courses/RS101/...` and `/courses/RS102/...` show different modules, assignments, and people.
 - `npm run lint` reports `prefer-const` / `no-var` in `app/labs/lab3`: the drills use `var` and `let` on purpose, as in the book. `npm run build` is unaffected.

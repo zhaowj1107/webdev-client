@@ -8,6 +8,9 @@ export default function AddingAndRemovingToFromArrays() {
   numberArray1.push(6);
   stringArray1.push("string3");
   todoArray.push(<li key={3}>Walk the dogs</li>);
+  todoArray.push(<li key={4}>Buy stamps</li>);
+  todoArray.push(<li key={5}>Water the plants</li>);
+  todoArray.splice(0, 1);
   numberArray1.splice(2, 1);
   stringArray1.splice(1, 1);
   return (

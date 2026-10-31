@@ -79,5 +79,14 @@
     "points": 100,
     "due": "2024-05-27",
     "available": "2024-05-20"
+  },
+  {
+    "_id": "A204",
+    "title": "A4",
+    "course": "RS102",
+    "description": "Measure lift and drag on a model airfoil in the wind tunnel and compare the results with thin-airfoil theory.",
+    "points": 100,
+    "due": "2024-06-03",
+    "available": "2024-05-27"
   }
 ]

@@ -3,6 +3,7 @@ import path from "node:path";
 export default function ServerComponentDemo() {
   const platform = process.platform;
   const arch = process.arch;
+  const pid = process.pid;
   const nodeVersion = process.version;
   const serverRenderTime = new Date().toLocaleTimeString();
   const lab3Dir = path.join(process.cwd(), "app/labs/lab3");
@@ -20,7 +21,11 @@ export default function ServerComponentDemo() {
       <p>Rendered on server at: {serverRenderTime}</p>
       <h2>Server Information</h2>
       <pre>
-        {JSON.stringify({ platform, arch, nodeVersion, serverRenderTime }, null, 2)}
+        {JSON.stringify(
+          { platform, arch, pid, nodeVersion, serverRenderTime },
+          null,
+          2,
+        )}
       </pre>
       <h2>Filesystem Access Demo</h2>
       <pre>{JSON.stringify(files, null, 2)}</pre>

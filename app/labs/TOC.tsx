@@ -10,6 +10,7 @@ const LINKS = [
   { href: "/labs/lab5", id: "wd-toc-lab5-link", label: "Lab 5", match: (p: string) => p.includes("/lab5") },
   { href: "/book/ch1", id: "wd-toc-book-link", label: "Chapter 1", match: () => false },
   { href: "/", id: "wd-kambaz-link", label: "Kambaz", match: () => false },
+  { href: "https://kambaz.dev/book/ch3", id: "wd-book-ch3-link", label: "Book Ch3", match: () => false },
 ] as const;
 const activeStyle = {
   backgroundColor: "#2563eb",

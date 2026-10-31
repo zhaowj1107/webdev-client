@@ -9,6 +9,8 @@ export default function BooleanVariables() {
   let true4 = numberVariable === 123;
   let true5 = floatingPointNumber !== 321.432;
   let false3 = numberVariable < 100;
+  const sameCourse = "CS5610" === "CS5610";
+  const true6 = numberVariable !== 0;
   return (
     <div id="wd-boolean-variables">
       <h4>Boolean Variables</h4>
@@ -19,7 +21,9 @@ export default function BooleanVariables() {
       true3 = {true3 + ""}   <br />
       true4 = {true4 + ""}   <br />
       true5 = {true5 + ""}   <br />
-      false3 = {false3 + ""}
+      false3 = {false3 + ""} <br />
+      sameCourse = {sameCourse + ""} <br />
+      true6 = {true6 + ""}
       <hr />
     </div>
   );

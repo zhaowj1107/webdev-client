@@ -6,7 +6,9 @@ export default function ArrayIndexAndLength() {
     <div id="wd-array-index-and-length">
       <h4>Array index and length</h4>
       length1 = {length1} <br />
-      index1 = {index1}
+      index1 = {index1} <br />
+      indexOf1 = {numberArray1.indexOf(1)} <br />
+      indexOf(9) = {numberArray1.indexOf(9)}
       <hr />
     </div>
   );

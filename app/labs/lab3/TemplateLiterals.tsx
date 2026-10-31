@@ -6,13 +6,20 @@ export default function TemplateLiterals() {
   const greeting1 = `Welcome home ${username}`;
   const loggedIn = false;
   const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
+  const myName = "Weijian";
+  const enrolled = true;
+  const myStatus = `${myName} is ${enrolled ? "enrolled in" : "not enrolled in"} CS5610`;
+  const published = true;
+  const courseStatus = `RS101 published: ${published ? "Yes" : "No"}`;
   return (
     <div id="wd-template-literals">
       <h4>Template Literals</h4>
       result1 = {result1}     <br />
       result2 = {result2}     <br />
       greeting1 = {greeting1} <br />
-      greeting2 = {greeting2}
+      greeting2 = {greeting2} <br />
+      courseStatus = {courseStatus} <br />
+      myStatus = {myStatus}
       <hr />
     </div>
   );

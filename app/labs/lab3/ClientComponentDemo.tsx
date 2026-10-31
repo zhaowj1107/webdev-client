@@ -7,6 +7,7 @@ export default function ClientComponentDemo() {
       <h1>Client Component Demo</h1>
       <p>Current pathname: {pathname}</p>
       <p>Pathname length: {pathname.length}</p>
+      <p>Last segment: {pathname.split("/").pop()}</p>
     </div>
   );
 }

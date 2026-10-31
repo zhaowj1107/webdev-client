@@ -22,6 +22,12 @@
         "name": "Rocket Engine Types",
         "description": "Overview of different types of rocket engines.",
         "module": "M101"
+      },
+      {
+        "_id": "L104",
+        "name": "Rockets in Everyday Life",
+        "description": "Where rocket technology shows up outside of spaceflight.",
+        "module": "M101"
       }
     ]
   },
@@ -47,6 +53,12 @@
         "_id": "L203",
         "name": "Combustion Instability",
         "description": "Understanding combustion instability and mitigation.",
+        "module": "M102"
+      },
+      {
+        "_id": "L204",
+        "name": "Nozzle Design",
+        "description": "How nozzle shape affects thrust.",
         "module": "M102"
       }
     ]

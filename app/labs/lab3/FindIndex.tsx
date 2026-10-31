@@ -7,7 +7,9 @@ export default function FindIndex() {
     <div id="wd-find-index">
       <h4>Find Index Function</h4>
       fourIndex = {fourIndex} <br />
-      string3Index = {string3Index}
+      string3Index = {string3Index} <br />
+      sixIndex = {numberArray1.findIndex((a) => a === 6)} <br />
+      threeIndex = {numberArray1.findIndex((a) => a === 3)}
       <hr />
     </div>
   );

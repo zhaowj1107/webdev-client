@@ -15,6 +15,9 @@ export default async function AssignmentEditor({
         Assignment Name
       </label>
       <input id="wd-name" defaultValue={assignment?.title ?? ""} className={`${input} mb-4`} />
+      <p id="wd-assignment-id" className="mb-4 text-sm text-neutral-600">
+        Assignment id: {aid}
+      </p>
       <textarea
         id="wd-description"
         rows={6}

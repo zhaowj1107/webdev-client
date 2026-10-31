@@ -3,6 +3,7 @@ export default function House() {
     bedrooms: 4,
     bathrooms: 2.5,
     squareFeet: 2000,
+    yearBuilt: 1998,
     address: {
       street: "Via Roma",
       city: "Roma",
@@ -11,9 +12,11 @@ export default function House() {
       country: "Italy",
     },
     owners: ["Alice", "Bob"],
+    garage: { cars: 2 },
   };
   console.log(house);
   console.log(house.owners);
+  console.log(house.address.city);
   return (
     <div id="wd-house">
       <h4>House</h4>
@@ -23,6 +26,10 @@ export default function House() {
       {house.bathrooms}
       <h5>owners</h5>
       {house.owners.join(", ")}
+      <h5>yearBuilt</h5>
+      {house.yearBuilt}
+      <h5>garage cars</h5>
+      {house.garage.cars}
       <h5>Number of properties</h5>
       {Object.keys(house).length}
       <h5>Data</h5>

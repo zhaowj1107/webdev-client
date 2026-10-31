@@ -76,12 +76,23 @@ export default function Lab3() {
       <ServerComponentDemo />
       <Add a={3} b={4} />
       <Add a={10} b={20} />
+      <Add a={7} b={8} />
       <h4>Square of 4</h4>
       <Square>4</Square>
+      <p>
+        Square of 9 = <Square>9</Square>
+      </p>
+      <p>
+        Square of 5 = <Square>5</Square>
+      </p>
       <hr />
       <Highlight>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       </Highlight>
+      <br />
+      <Highlight>I am learning React components in CS5610.</Highlight>
+      <br />
+      <Highlight>Children can be any JSX</Highlight>
       <PathParameters />
       <TodoList />
     </div>

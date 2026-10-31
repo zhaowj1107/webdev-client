@@ -3,6 +3,7 @@ export default function Classes() {
   const color = "blue";
   const dangerous = true;
   const sunny = false;
+  const shade = "green";
   return (
     <div id="wd-classes">
       <h2>Classes</h2>
@@ -27,6 +28,9 @@ export default function Classes() {
         className={`${sunny ? "wd-bg-yellow" : "wd-bg-green"} wd-fg-black wd-padding-10px`}
       >
         {sunny ? "Yellow" : "Green"} background
+      </div>
+      <div className={`wd-bg-${shade} wd-fg-black wd-padding-10px`}>
+        Dynamic Green background
       </div>
       <hr />
     </div>
